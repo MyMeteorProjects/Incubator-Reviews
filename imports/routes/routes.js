@@ -6,9 +6,11 @@ import Signup from '../ui/Signup';
 import Dashboard from '../ui/Dashboard';
 import NotFound from '../ui/NotFound';
 import Login from '../ui/Login';
+import IncubatorList from '../ui/IncubatorList';
+
 
 const unauthenticatedPages = ['/', '/Signup', '/Login'];
-const authenticatedPages = ['/AddIncubator', '/Review Incubator'];
+const authenticatedPages = [/*'/AddIncubator', '/ReviewIncubator'*/];
 const onEnterPublicPage = () => {
   if (Meteor.userId()) {
     browserHistory.replace('/Dashboard');
@@ -34,6 +36,8 @@ export const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={Dashboard} onEnter={onEnterPublicPage}/>
     <Route path="/Signup" component={Signup} onEnter={onEnterPublicPage}/>
+    {/* <Route path="/IncubatorList" component={IncubatorList} onEnter={onEnterPublicPage}/>
+    <Route path="/IncubatorListItem" component={IncubatorListItem} onEnter={onEnterPublicPage}/> */}
     <Route path="/Login" component={Login} onEnter={onEnterPublicPage}/>
     <Route path="*" component={NotFound}/>
   </Router>
