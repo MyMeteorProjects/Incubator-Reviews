@@ -7,6 +7,7 @@ import Dashboard from '../ui/Dashboard';
 import NotFound from '../ui/NotFound';
 import Login from '../ui/Login';
 import IncubatorList from '../ui/IncubatorList';
+import IncubatorEditor from '../ui/IncubatorEditor';
 
 
 const unauthenticatedPages = ['/', '/Signup', '/Login'];
@@ -38,6 +39,7 @@ export const routes = (
     <Route path="/Signup" component={Signup} onEnter={onEnterPublicPage}/>
     {/* <Route path="/IncubatorList" component={IncubatorList} onEnter={onEnterPublicPage}/>
     <Route path="/IncubatorListItem" component={IncubatorListItem} onEnter={onEnterPublicPage}/> */}
+    <Route path="/IncubatorEditor" component={IncubatorEditor} onEnter={onEnterPublicPage}/>
     <Route path="/Login" component={Login} onEnter={onEnterPublicPage}/>
     <Route path="*" component={NotFound}/>
   </Router>

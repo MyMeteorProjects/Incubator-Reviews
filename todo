@@ -1,13 +1,13 @@
 1. components:
     * nav bar
     * search bar
-    * incubator list
-      * incubator item
+    * incubator list V
+      * incubator item V
         * review list
           * review item
             * star Review
         * review editor
-          
+  *
     * incubator editor
 
 

@@ -15,5 +15,9 @@
   },
   "engines": {
     "node": "4.6.2"
+  },
+  "devDependencies": {
+    "short-id": "0.1.0-1",
+    "shortid": "^2.2.8"
   }
 }
